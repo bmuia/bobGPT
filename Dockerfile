@@ -14,6 +14,9 @@ RUN pip install gunicorn
 # Copy project files
 COPY . .
 
+# SET TRAINING MODEL
+RUN python -m chat.train
+
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 
