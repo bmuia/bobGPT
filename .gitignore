@@ -16,7 +16,7 @@ env/
 db.sqlite3
 
 # Ignore large files (models, datasets)
-*.pth
+# *.pth
 *.h5
 *.pt
 *.onnx
