@@ -14,8 +14,13 @@ RUN pip install gunicorn
 # Copy project files
 COPY . .
 
-# SET TRAINING MODEL
+
+# Download NLTK data
+RUN python -m nltk.downloader punkt
+
+# Run model training
 RUN python -m chat.train
+
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
