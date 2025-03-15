@@ -5,6 +5,7 @@ django-cors-headers==4.7.0
 djangorestframework==3.15.2
 filelock==3.18.0
 fsspec==2025.3.0
+gunicorn==23.0.0
 Jinja2==3.1.6
 joblib==1.4.2
 MarkupSafe==3.0.2
@@ -25,6 +26,7 @@ nvidia-cusparselt-cu12==0.6.2
 nvidia-nccl-cu12==2.21.5
 nvidia-nvjitlink-cu12==12.4.127
 nvidia-nvtx-cu12==12.4.127
+packaging==24.2
 pillow==11.1.0
 regex==2024.11.6
 setuptools==76.0.0
