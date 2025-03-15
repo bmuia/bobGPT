@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .models import ChatMessage
-from .bot import get_response  # Import your chatbot function
+from .bot import get_response  
 
 @api_view(["POST"])
 def chat(request):
