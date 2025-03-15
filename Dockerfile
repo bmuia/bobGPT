@@ -15,11 +15,18 @@ RUN pip install gunicorn
 COPY . .
 
 
+# Install dependencies
+RUN pip install -r requirements.txt
+
 # Download NLTK data
-RUN python -m nltk.downloader punkt
+RUN python -c "import nltk; nltk.download('punkt'); nltk.download('averaged_perceptron_tagger'); nltk.download('wordnet'); nltk.download('omw-1.4')"
+
+# Explicitly set NLTK data path
+ENV NLTK_DATA=/usr/local/nltk_data
 
 # Run model training
 RUN python -m chat.train
+
 
 
 # Set environment variables
