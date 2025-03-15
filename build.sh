@@ -4,9 +4,14 @@
 echo "Installing dependencies..."
 pip install -r requirements.txt
 
-# run training script
+# Download NLTK 'punkt' resource
+echo "Downloading NLTK 'punkt' resource..."
+python -c "import nltk; nltk.download('punkt')"
+
+# Run training script
 echo "Training the model..."
 python -m chat.train
+
 # Run Django migrations (even for SQLite)
 echo "Running migrations..."
 python manage.py migrate
