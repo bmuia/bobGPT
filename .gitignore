@@ -1,0 +1,28 @@
+# Byte-compiled / Virtualenv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Logs and databases
+*.log
+db.sqlite3
+
+# Ignore large files (models, datasets)
+*.pth
+*.h5
+*.pt
+*.onnx
+*.tflite
+
+# Ignore environment variables (secrets, API keys)
+.env
+.env.local
+.env.production
