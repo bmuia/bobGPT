@@ -28,7 +28,7 @@ COPY . .
 RUN python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab'); nltk.download('averaged_perceptron_tagger'); nltk.download('wordnet'); nltk.download('omw-1.4')"
 
 # Copy trained model (ensure it exists)
-COPY chatbot_model.pth /app/chat/chatbot_model.pth
+COPY chat/chatbot_model.pth /app/chat/chatbot_model.pth
 
 # Collect static files
 RUN mkdir -p /app/staticfiles && python manage.py collectstatic --noinput
