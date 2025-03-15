@@ -4,6 +4,9 @@
 echo "Installing dependencies..."
 pip install -r requirements.txt
 
+# run training script
+echo "Training the model..."
+python -m chat.train
 # Run Django migrations (even for SQLite)
 echo "Running migrations..."
 python manage.py migrate
