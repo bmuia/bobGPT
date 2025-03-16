@@ -4,9 +4,7 @@
 echo "Installing dependencies..."
 pip install -r requirements.txt
 
-# Wait for the database to be ready
-echo "Waiting for the database to be ready..."
-python wait_for_db.py
+
 
 
 # Run Django migrations (even for SQLite)
